@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="1000" pageHeight="842" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4ebd4a96-4ed8-4d63-9739-1cc15c86af46">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="4"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM pelanggan]]>
+	</queryString>
+	<field name="ID_PELANGGAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KODE_POS_DAERAH" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HP2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NAMA_PELANGGAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TANGGAL_DAFTAR" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="STATUS_PELANGGAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="419" y="0" width="100" height="20" uuid="e5005dba-264d-48a2-af79-63f69723e3ae"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA PELANGGAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="36" y="0" width="100" height="20" uuid="f50ca21b-2424-463e-b26b-c1596398c86d"/>
+				<text><![CDATA[ID_PELANGGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="0" width="130" height="20" uuid="bb5304ea-7d72-4f36-a09e-47ad84ccd65a"/>
+				<text><![CDATA[KODE_POS_DAERAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="0" width="79" height="20" uuid="f0b95581-b2a4-499f-993f-4b9e36813c4c"/>
+				<text><![CDATA[HP2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="0" width="123" height="20" uuid="52f3f786-5489-48a6-9617-d32ccbff131f"/>
+				<text><![CDATA[NAMA_PELANGGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="468" y="0" width="118" height="20" uuid="41d2de9e-d1fd-4fd3-9eb2-ce743eed3e91"/>
+				<text><![CDATA[TANGGAL_DAFTAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="586" y="0" width="131" height="20" uuid="7e8718e7-f882-48d4-a2e9-4d09fefc205c"/>
+				<text><![CDATA[STATUS_PELANGGAN]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="36" y="0" width="100" height="20" uuid="dfbcf13e-3149-452f-ae92-968cab26e896"/>
+				<textFieldExpression><![CDATA[$F{ID_PELANGGAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="0" width="130" height="20" uuid="d64cf780-9c5c-4d2a-b0c4-33d7b6ce9ea6"/>
+				<textFieldExpression><![CDATA[$F{KODE_POS_DAERAH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="266" y="0" width="79" height="20" uuid="694cb037-9ee3-46b6-851b-d234d910405f"/>
+				<textFieldExpression><![CDATA[$F{HP2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="123" height="20" uuid="0a62437c-9c70-404e-b80a-bb33c4b736c7"/>
+				<textFieldExpression><![CDATA[$F{NAMA_PELANGGAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="0" width="118" height="20" uuid="7dbf81d3-ba9d-461a-adda-af61a3e45b42"/>
+				<textFieldExpression><![CDATA[$F{TANGGAL_DAFTAR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="586" y="0" width="131" height="20" uuid="12bf0964-5426-4d1a-b3bf-87c2fa355764"/>
+				<textFieldExpression><![CDATA[$F{STATUS_PELANGGAN}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

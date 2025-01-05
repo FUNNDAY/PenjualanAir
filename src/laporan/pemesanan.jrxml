@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="90bea8f6-a658-4a98-b789-63cd1fbce237">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from pemesanan]]>
+	</queryString>
+	<field name="ID_PEMESANAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_PELANGGAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_PRODUK" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TGL_PEMESANAN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="JUMLAH_PESAN" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="3" y="2" width="100" height="20" uuid="4db85c48-a101-4055-95e6-b5c4fa2f411d"/>
+				<text><![CDATA[ID_PEMESANAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="2" width="100" height="20" uuid="3b56c87e-335d-4445-aac0-2ed5b72c1861"/>
+				<text><![CDATA[ID_PELANGGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="232" y="2" width="100" height="20" uuid="f63ea139-561c-4fc8-8995-5ff6929cea57"/>
+				<text><![CDATA[ID_PRODUK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="2" width="100" height="20" uuid="4b06e05c-688f-4dfe-8443-26527b26cbab"/>
+				<text><![CDATA[TGL_PEMESANAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="2" width="100" height="20" uuid="4f60feff-306e-4a96-bae3-946a458f4735"/>
+				<text><![CDATA[JUMLAH_PESAN]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="7" width="100" height="20" uuid="dcb95cb8-d7e5-40fe-8a7a-e66574d42c1a"/>
+				<textFieldExpression><![CDATA[$F{ID_PEMESANAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="10" width="100" height="20" uuid="80764e18-9ec2-4034-b456-b08c7046b84d"/>
+				<textFieldExpression><![CDATA[$F{ID_PELANGGAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="232" y="15" width="100" height="20" uuid="4e72d67f-141f-4067-8afb-f9560f82e5e9"/>
+				<textFieldExpression><![CDATA[$F{ID_PRODUK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="7" width="100" height="20" uuid="c2f416d6-a016-47e2-9332-c357aaaed172"/>
+				<textFieldExpression><![CDATA[$F{TGL_PEMESANAN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="12" width="100" height="20" uuid="e264a85a-0a45-458b-a39e-6cd3c2328bf5"/>
+				<textFieldExpression><![CDATA[$F{JUMLAH_PESAN}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
